@@ -1,6 +1,15 @@
 # Custom_PE_ViT
 
 
+
+### Repo Details
+
+This is a repo with code for custom distance signal injection to ViTs injectable across different layers of MHSA. Two cusotm distance injections:
+
+a) RADAR : This is a small param based linear technique, which projects distance features into non linear space, outperforming many strong baselines like LoRA at fraction of param budget.
+
+b) PFIM : This is param free just works on amplying or dampening embeddings similar in spirit to SwiGLU but outperforms many baselines with manipulation of embeddings.
+
 ### Pre-Computing Transformed Image Datasets
 
 We strongly suggest pre-computing all image transformations and saving them on disk ONCE, and re-use them in all ablations and training experiments, so as to cut down compute and cost of traning and ablation runs.
